@@ -73,6 +73,31 @@ const componentize = function(str, name, collection) {
   );
 };
 
+const getFiles = function(dir) {
+  let fileList = [];
+  let stats;
+
+  fs.readdirSync(dir).forEach(function(filename) {
+    if (!filename.includes(".DS_Store")) {
+      stats = fs.lstatSync(path.join(dir, filename));
+
+      if (stats.isDirectory()) {
+        fileList.push({
+          dir: filename,
+          files: getFiles(path.join(dir, filename))
+        });
+      }
+      else {
+        fileList.push({
+          name: filename
+        });
+      }
+    }
+  });
+
+  return fileList;
+};
+
 watch(
   "./src/svg",
   { encoding: "utf8", recursive: true },
@@ -114,6 +139,28 @@ watch(
           return;
         });
       });
+
+      let fileList = [];
+
+      getFiles("./src/svg").forEach(function(parentDir) {
+        parentDir['files'].forEach(function(file) {
+          fileList.push(
+            path.join(parentDir['dir'], getPascalCaseName(file['name'].replace(/\.[^/.]+$/, "")))
+          );
+        })
+      });
+
+      fs.writeFile(
+        "./examples/sprockets_require.js",
+        fileList.map(function(line) {
+          return `// require @planning-center/icons/components/${line}`
+        }).join("\n"),
+        function(err) {
+          if (err) {
+            return console.log(err);
+          }
+        }
+      );
     }
   }
 );

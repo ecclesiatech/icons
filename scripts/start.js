@@ -141,19 +141,30 @@ watch(
       });
 
       let fileList = [];
+      let lastDir = "";
 
       getFiles("./src/svg").forEach(function(parentDir) {
-        parentDir['files'].forEach(function(file) {
+        parentDir["files"].forEach(function(file) {
+          if (parentDir["dir"] !== lastDir) {
+            if (lastDir !== "") {
+              fileList.push("");
+            }
+
+            lastDir = parentDir["dir"];
+          }
+
           fileList.push(
-            path.join(parentDir['dir'], getPascalCaseName(file['name'].replace(/\.[^/.]+$/, "")))
+            path.join(parentDir["dir"], getPascalCaseName(file["name"].replace(/\.[^/.]+$/, "")))
           );
         })
       });
 
+      fileList.push(""); // EOF new line
+
       fs.writeFile(
         "./examples/sprockets_require.js",
         fileList.map(function(line) {
-          return `// require @planning-center/icons/components/${line}`
+          return line ? `// require @planning-center/icons/components/${line}` : ""
         }).join("\n"),
         function(err) {
           if (err) {

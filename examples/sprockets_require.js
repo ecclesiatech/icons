@@ -51,6 +51,7 @@
 // require @planning-center/icons/components/accounts/Twilio
 // require @planning-center/icons/components/accounts/Upload
 // require @planning-center/icons/components/accounts/Viewer
+
 // require @planning-center/icons/components/apps/AccountsApp
 // require @planning-center/icons/components/apps/AccountsBadge
 // require @planning-center/icons/components/apps/ApiApp
@@ -75,6 +76,7 @@
 // require @planning-center/icons/components/apps/ResourcesBadge
 // require @planning-center/icons/components/apps/ServicesApp
 // require @planning-center/icons/components/apps/ServicesBadge
+
 // require @planning-center/icons/components/cco/AccountsApp
 // require @planning-center/icons/components/cco/AccountsBadge
 // require @planning-center/icons/components/cco/AddOnsOutline
@@ -156,6 +158,7 @@
 // require @planning-center/icons/components/cco/Ticket
 // require @planning-center/icons/components/cco/Trash
 // require @planning-center/icons/components/cco/WalletO
+
 // require @planning-center/icons/components/check-ins/Artboard55
 // require @planning-center/icons/components/check-ins/AdminPanel
 // require @planning-center/icons/components/check-ins/BarCode
@@ -193,7 +196,6 @@
 // require @planning-center/icons/components/check-ins/Label
 // require @planning-center/icons/components/check-ins/Location
 // require @planning-center/icons/components/check-ins/Medical
-// require @planning-center/icons/components/check-ins/MicrosoftEdge
 // require @planning-center/icons/components/check-ins/MinusCircle
 // require @planning-center/icons/components/check-ins/MobilePass
 // require @planning-center/icons/components/check-ins/NewStation
@@ -222,6 +224,7 @@
 // require @planning-center/icons/components/check-ins/UpArrow
 // require @planning-center/icons/components/check-ins/Upload
 // require @planning-center/icons/components/check-ins/X
+
 // require @planning-center/icons/components/color-apps/ColorAccountsApp
 // require @planning-center/icons/components/color-apps/ColorAccountsBadge
 // require @planning-center/icons/components/color-apps/ColorApiApp
@@ -246,6 +249,7 @@
 // require @planning-center/icons/components/color-apps/ColorResourcesBadge
 // require @planning-center/icons/components/color-apps/ColorServicesApp
 // require @planning-center/icons/components/color-apps/ColorServicesBadge
+
 // require @planning-center/icons/components/giving/Ach
 // require @planning-center/icons/components/giving/Anonymous
 // require @planning-center/icons/components/giving/ArrowUpTrendCircleO
@@ -298,6 +302,7 @@
 // require @planning-center/icons/components/giving/ToArrow
 // require @planning-center/icons/components/giving/Transfers
 // require @planning-center/icons/components/giving/TrashCircleOutline
+
 // require @planning-center/icons/components/groups/AlertExclamationO
 // require @planning-center/icons/components/groups/ArrowsMerging
 // require @planning-center/icons/components/groups/Cards
@@ -331,6 +336,7 @@
 // require @planning-center/icons/components/groups/TemplateO
 // require @planning-center/icons/components/groups/Trash
 // require @planning-center/icons/components/groups/UnlockO
+
 // require @planning-center/icons/components/interfaces/ArrowDown
 // require @planning-center/icons/components/interfaces/ArrowLeft
 // require @planning-center/icons/components/interfaces/ArrowRight
@@ -384,6 +390,7 @@
 // require @planning-center/icons/components/interfaces/Switch
 // require @planning-center/icons/components/interfaces/Trash
 // require @planning-center/icons/components/interfaces/X
+
 // require @planning-center/icons/components/people/ActivityEnvelopeOutline
 // require @planning-center/icons/components/people/ActivityRegis
 // require @planning-center/icons/components/people/AddHousehold
@@ -454,12 +461,14 @@
 // require @planning-center/icons/components/people/TwitterOutline
 // require @planning-center/icons/components/people/Twitter
 // require @planning-center/icons/components/people/Workflows
+
 // require @planning-center/icons/components/planning-center/ColorPlanningCenterBadge
 // require @planning-center/icons/components/planning-center/ColorPlanningCenterMark
 // require @planning-center/icons/components/planning-center/LightPlanningCenterBadge
 // require @planning-center/icons/components/planning-center/LightPlanningCenterMark
 // require @planning-center/icons/components/planning-center/PlanningCenterBadge
 // require @planning-center/icons/components/planning-center/PlanningCenterMark
+
 // require @planning-center/icons/components/registrations/AddCircle
 // require @planning-center/icons/components/registrations/AddOnsOutline
 // require @planning-center/icons/components/registrations/AddOns
@@ -524,6 +533,7 @@
 // require @planning-center/icons/components/registrations/TwitterOutline
 // require @planning-center/icons/components/registrations/Undo
 // require @planning-center/icons/components/registrations/View
+
 // require @planning-center/icons/components/resources/ApprovalGroup
 // require @planning-center/icons/components/resources/Calendar
 // require @planning-center/icons/components/resources/Check
@@ -561,6 +571,7 @@
 // require @planning-center/icons/components/resources/Share
 // require @planning-center/icons/components/resources/Time
 // require @planning-center/icons/components/resources/Warning
+
 // require @planning-center/icons/components/services/Admin
 // require @planning-center/icons/components/services/ApproveCheck
 // require @planning-center/icons/components/services/CheckIns
